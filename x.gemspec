@@ -18,9 +18,11 @@ Gem::Specification.new do |s|
   s.files = [
     ".gitignore",
      "README.md",
+     "Rakefile",
      "VERSION",
      "lib/x.rb",
-     "test/x_test.rb"
+     "test/x_test.rb",
+     "x.gemspec"
   ]
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
