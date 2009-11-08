@@ -3,6 +3,8 @@ X
 
 Ruby utilities.
 
+    sudo gem install x -s http://gemcutter.org
+
 Converting
 ----------
 
