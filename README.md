@@ -12,9 +12,9 @@ Converting
 Filing
 ------
 
-    File.here                          # 'test'
-    File.up / 'lib' / 'x'              # 'test/../lib/x'
-    File.up(2) / 'x' / 'README'        # 'test/../../x/README'
+    File.here                   # 'test'
+    File.up / 'lib' / 'x'       # 'test/../lib/x'
+    File.up(2) / 'x' / 'README' # 'test/../../x/README'
 
 Testing
 -------
