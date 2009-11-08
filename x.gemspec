@@ -21,13 +21,15 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "lib/x.rb",
+     "pkg/x-0.0.1.gem",
      "test/x_test.rb",
      "x.gemspec"
   ]
+  s.homepage = %q{http://github.com/dancroak/x}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}
-  s.summary = nil
+  s.summary = %q{Ruby utilities.}
   s.test_files = [
     "test/x_test.rb"
   ]
