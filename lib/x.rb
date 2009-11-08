@@ -12,9 +12,11 @@ class String
   end
 end
 
-class Test::Unit::TestCase
-  def self.should(name, &block)
-    define_method("test_#{name.snake_case}", &block)
+if defined?(Test::Unit::TestCase)
+  class Test::Unit::TestCase
+    def self.should(name, &block)
+      define_method("test_#{name.snake_case}", &block)
+    end
   end
 end
 
