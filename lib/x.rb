@@ -20,13 +20,13 @@ if defined?(Test::Unit::TestCase)
   end
 end
 
-class File
+class Dir
   def self.here
-    dirname(caller[0].split(':').first)
+    File.dirname(caller[0].split(':').first)
   end
 
   def self.up(dir_count = 1)
-    path = dirname(caller[0].split(':').first)
+    path = File.dirname(caller[0].split(':').first)
     dir_count.times { path = path / '..' }
     path
   end

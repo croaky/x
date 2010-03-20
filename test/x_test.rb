@@ -11,8 +11,8 @@ class XTest < Test::Unit::TestCase
   end
 
   should "join file paths" do
-    assert_equal 'test',                File.here
-    assert_equal 'test/../lib/x',       File.up / 'lib' / 'x'
-    assert_equal 'test/../../x/README', File.up(2) / 'x' / 'README'
+    assert_equal 'test',                Dir.here
+    assert_equal 'test/../lib/x',       Dir.up / 'lib' / 'x'
+    assert_equal 'test/../../x/README', Dir.up(2) / 'x' / 'README'
   end
 end
